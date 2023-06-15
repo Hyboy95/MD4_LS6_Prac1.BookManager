@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+ <title>Books</title>
+
+
+</head>
+
+<body>
+
+ <h2>List Books</h2>
+
+ <% for(const book of books) { %>
+
+ <h3>
+
+ Title: <%= book.title %>
+
+ </h3>
+
+ <p>
+
+ Description: <%= book.description %>
+
+ </p>
+
+ <p>
+
+ Author: <%= book.author %>
+
+ </p>
+
+ <a href="/update/<%= book.id %>">Update</a>
+
+ <a href="/delete/<%= book.id %>">Delete</a>
+
+ </br>
+
+ <% } %>
+
+</body>
+
+</html>
